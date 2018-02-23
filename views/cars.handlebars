@@ -1,0 +1,16 @@
+<a href="/">
+	<i class="fa-fa-home"></i>
+</a>
+
+<h1>{{ message }}</h1>
+
+<ul>
+	{{#each carData}}
+	<li>
+		<h4>{{ modelName }}</h4>
+		<p>${{ pricing }}</p>
+		<p>{{ modelDetails }}</p>
+		<img src="{{ model }}.jpg">
+	</li>
+	{{/each}}
+</ul>
